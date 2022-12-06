@@ -6,7 +6,7 @@ part 'spacing_data.freezed.dart';
 /// Defines the configuration of the overall visual [Spacing] for a
 /// widget subtree within the app.
 @freezed
-abstract class SpacingData with _$SpacingData {
+class SpacingData with _$SpacingData {
   /// Generates all [spaces] and [insets] from a given
   /// [normal] base space value.
   ///
@@ -83,7 +83,7 @@ abstract class SpacingData with _$SpacingData {
 /// * [exceptTop] equivalent of `EdgeInsets.fromLTRB(<size>,0,<size>,<size>)`
 /// * [exceptBottom] equivalent of `EdgeInsets.fromLTRB(<size>,<size>,<size>,0)`
 @freezed
-abstract class SpacingInsetsData with _$SpacingInsetsData {
+class SpacingInsetsData with _$SpacingInsetsData {
   factory SpacingInsetsData.fromSpaces(SizeSet<double> spaces) {
     return SpacingInsetsData(
       all: SizeSet(
@@ -345,7 +345,7 @@ abstract class SpacingInsetsData with _$SpacingInsetsData {
 
 /// A set of size variants, from [extraSmall] to [extraBig]
 @freezed
-abstract class SizeSet<T> with _$SizeSet<T> {
+class SizeSet<T> with _$SizeSet<T> {
   /// The user is currently updating the login form.
   const factory SizeSet({
     required T extraSmall,
